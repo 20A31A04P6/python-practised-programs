@@ -1,0 +1,119 @@
+program1:-
+
+str1='ABCDEFG'
+str2="ate"
+for l in str1:
+    print((l+str2),end=" ")
+
+o/p:-
+
+Aate Bate Cate Date Eate Fate Gate 
+
+program2-
+
+cubes=[]
+for i in range(1,11):
+    cubes.append(i**3)
+print(cubes)    
+
+o/p:-
+
+[1, 8, 27, 64, 125, 216, 343, 512, 729, 1000]
+
+
+program3:-
+
+abc=[1,2,3,4,5,6,7,8,9,10]
+sum=0
+for i in abc:
+    sum+=i
+    mean=sum/10
+print(sum)
+print(mean)    
+
+
+   OR
+
+abc=[1,2,3,4,5,6,7,8,9,10]
+sum=0
+for i in abc:
+    sum+=i
+print(sum)
+print(sum/len(abc))
+
+o/p:-
+55
+5.5
+
+
+#pre-defined functions 
+
+* a=[90,0,8,7]
+print(max(a))
+
+@:- 90
+
+   a=[90,0,8,7]
+* print(min(a))
+
+@:- 0
+
+* a=[90,0,8,7]
+print(sum(a))
+
+@:- 105
+
+* ab=[-0,99,-99,231,86]
+print(sorted(ab))
+
+@:- [-99, 0, 86, 99, 231]
+
+* ab=[-0,99,-99,231,86]
+ab.append(10)
+print(ab)
+
+o/p:-
+
+[0, 99, -99, 231, 86, 10]
+
+* ab=[-0,99,-99,231,86]
+print(ab.count(99))
+
+
+@:-
+
+10
+
+* ab=[-0,99,-99,231,86]
+ab.insert(3,100)
+print(ab)
+
+@:-
+
+[0, 99, -99, 100, 231, 86]
+
+* ab=[-0,99,-99,231,86]
+ab.remove(99)
+print(ab)
+
+
+@:-
+[0, -99, 231, 86]
+
+
+#hanoii numbers
+
+hanoii(n,a,b,c):
+    if n>0:
+        hanoi(n-1,a,c,b)
+        if a:
+            c.append(a.pop)
+        hanoi(n-1,b,a,c)
+a=[1,2,3,4]
+b=[]
+c=[]
+hanoi(len(a),a,b,c)
+print(a,b,c)
+
+
+
